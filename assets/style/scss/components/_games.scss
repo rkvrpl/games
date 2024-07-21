@@ -1,0 +1,38 @@
+.games {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background: url('/assets/img/bg1.png');
+  background-position: center;
+  background-size: cover;
+}
+.games__img {
+  position: absolute;
+  top: 100px;
+  left: -290px;
+  width: 90%;
+}
+.games__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  color: #fff;
+  margin: 140px 100px 150px 0;
+}
+.games__container-title {
+  font-size: 2.8vw;
+}
+.games__container-text {
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+.games__container__games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+.games__containe__games-item {
+  width: 100%;
+}

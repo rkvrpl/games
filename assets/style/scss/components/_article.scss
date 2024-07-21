@@ -1,0 +1,21 @@
+.article {
+  display: flex;
+  justify-content: space-around;
+  background: radial-gradient(
+    circle,
+    rgba(12, 35, 46, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.article__text {
+  font-size: 1.8vw;
+  color: #ff7efa;
+  text-shadow: 0 0 10px #d13acc;
+  animation: blink 2s linear infinite;
+  margin: 15px;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+}
