@@ -14,9 +14,46 @@
 				<li><a class='navigation__item' href="#">Games</a></li>
 				<li><a class='navigation__item' href="#">How to play</a></li>
 				<li><a class='navigation__item' href="#">Company</a></li>
-				<li><button class='navigation__button'>Sign Up</button></li>
+				<li><button class='navigation__button open_modal login'>Sign Up</button></li>
 			</ul>
 		</nav>
+		<aside class="modal" id="my-modal">
+			<div class="modal__box">
+			  <button class="modal__close-btn" id="close-my-modal-btn">
+				<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				  <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+					fill="#333333" />
+				  <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+				</svg>
+			  </button>
+			  <div id="container">
+				<h1 class='modal__title'>Registration</h1>
+				<div class="name">
+				  <input type="text" class="input_form" id="name_input" placeholder="Name" minlength="2" maxlength="20"
+					required />
+				</div>
+				<div class="email">
+				  <input type="email" class="input_form" id="email_input" placeholder="E-mail" required />
+				</div>
+				<div class="age">
+				  <input type="number" class="input_form" min="0" id="age_input" placeholder="Your age" required />
+				</div>
+				<div class="password">
+				  <input type="password" class="input_form" id="password_input" placeholder="Password" required />
+				</div>
+				<div class="repeat">
+				  <input type="password" class="input_form" id="repeat_input" placeholder="Repeat password" required />
+				</div>
+				<div class="agree">
+				  <input type="checkbox" class="radio-styles" id="checkbox_input" />
+				  I agree all of this stuff
+				</div>
+				<div>
+				  <button id="validate" required>Submit</button>
+				</div>
+			  </div>
+			</div>
+		</aside>	
 	</header>
 	<main>
 		<section class='wrapper-video'>
@@ -25,7 +62,7 @@
 			</video>
 			<div class='wrapper-video__content'>
 				<a href="#"><img class='wrapper-video__logo' src="./assets/icon/cat.svg" alt="cat"></a>
-				<button class='wrapper-video__button'>Sign Up</button>
+				<button class='wrapper-video__button open_modal login'>Sign Up</button>
 				<ul class='wrapper-video__list'>
 					<li><a href="#">
 						<img class='wrapper-video__contact' src="./assets/icon/amazon.svg" alt="amazon">
@@ -167,7 +204,7 @@
 					<span class='mail'>
 						<img class='mail-icon' src="./assets/icon/mail.svg" alt="mail">
 					</span>
-					<input class='form__input' id='email' type='email' name='email' placeholder='Email address' />
+					<input required class='form__input' id='email' type='email' name='email' placeholder='Email address' />
 					<input class='form__button' type="submit" value="Submit" />
 				</form>
 			</div>
