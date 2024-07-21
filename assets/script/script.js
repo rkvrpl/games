@@ -31,15 +31,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = scrollPosition()
 })
-
-//показ ответов на вопросы
-questionsArr.forEach((item, index) => {
-	item.addEventListener('click', function () {
-		answersArr[index].classList.toggle('questions-answer-open')
-		plusArr[index].classList.toggle('pass')
-	})
-  })
-
 //валидация модального окна
 function submitModal() {
 	let nameValue = nameInput.value;
@@ -125,3 +116,10 @@ myModal.addEventListener("click", (event) => {
 if (event._isClickWithInModal) return;
 event.currentTarget.classList.remove("open");
 });
+//показ ответов на вопросы
+questionsArr.forEach((item, index) => {
+	item.addEventListener('click', function () {
+		answersArr[index].classList.toggle('questions-answer-open')
+		plusArr[index].classList.toggle('pass')
+	})
+  })
