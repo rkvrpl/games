@@ -1,0 +1,78 @@
+.friends {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: radial-gradient(
+    circle,
+    rgba(66, 149, 69, 1) 0%,
+    rgba(57, 139, 62, 1) 35%,
+    rgba(38, 93, 41, 1) 100%
+  );
+}
+.friends__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 40px 0;
+}
+.friends__img-title {
+  text-align: right;
+  width: 40%;
+}
+.friends__img-img {
+  margin-top: 20px;
+  width: 10vw;
+}
+.friends__form {
+  width: 40%;
+  padding: 40px 0;
+}
+.friends__form-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.friends__form-text {
+  width: 90%;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.list-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 25px 0;
+}
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 35px;
+}
+.mail {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+.mail-icon {
+  width: 1.2vw;
+}
+.form__input {
+  border: none;
+  border-radius: 5px 5px 0 0;
+}
+.form__button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.form__button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(27, 28, 35);
+}
+.form__input,
+.form__button {
+  width: 90%;
+  padding: 10px 35px;
+}

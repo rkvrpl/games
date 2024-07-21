@@ -1,0 +1,29 @@
+.party {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: url(/assets/img/bg2.jpg);
+  padding: 100px;
+}
+.party__text {
+  margin-top: 40px;
+}
+.party__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+}
+.party__img {
+  width: 10vw;
+  transition: transform 0.5s;
+}
+.party__img:hover {
+  transform: scale(1.1);
+}
+.party__img-center {
+  grid-area: 3/3;
+}

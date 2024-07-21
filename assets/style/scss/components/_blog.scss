@@ -1,0 +1,70 @@
+.blog {
+  background: url(/assets/img/bg3.jpg);
+  padding: 100px;
+}
+.blog__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+.blog__container__text {
+  text-align: center;
+  font-size: 1.2vw;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 10px;
+}
+.blog__container__date {
+  font-size: 1vw;
+  font-weight: 200;
+  font-style: italic;
+}
+.blog__container-bg-one,
+.blog__container-bg-two,
+.blog__container-bg-three,
+.blog__container-bg-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 30px 40px;
+  height: 100%;
+  color: white;
+  transition: transform 1s;
+}
+.blog__container-bg-one:hover,
+.blog__container-bg-two:hover,
+.blog__container-bg-three:hover,
+.blog__container-bg-four:hover {
+  transform: scale(1.03);
+  border: 2px solid white;
+}
+.blog__container-bg-one {
+  background: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%),
+    url(/assets/img/blog.jpg);
+}
+.blog__container-bg-two {
+  background: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%),
+    url(/assets/img/blog2.jpg);
+}
+.blog__container-bg-three {
+  background: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%),
+    url(/assets/img/blog3.jpg);
+}
+.blog__container-bg-four {
+  background: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%),
+    url(/assets/img/blog4.jpg);
+}
+.blog__button {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 25%;
+  margin-top: 40px;
+  background: transparent;
+  padding: 20px;
+}
+.blog__button:hover {
+  border: 2px solid white;
+  padding: 19px 20px 19px 20px;
+}
