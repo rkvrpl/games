@@ -1,0 +1,2 @@
+Redirect 301 /index.html
+ErrorDocument 404 /error.html
