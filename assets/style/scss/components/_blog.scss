@@ -1,5 +1,5 @@
 .blog {
-  background-image: url(./assets/img/bg3.jpg);
+  background-image: url(../img/bg3.jpg);
   padding: 100px;
 }
 .blog__container {
@@ -45,28 +45,28 @@
       rgba(0, 0, 0, 0.4) 30%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url(./assets/img/blog.jpg);
+    url(../img/blog.jpg);
 }
 .blog__container-bg-two {
   background-image: radial-gradient(
       rgba(0, 0, 0, 0.4) 30%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url(./assets/img/blog2.jpg);
+    url(../img/blog2.jpg);
 }
 .blog__container-bg-three {
   background-image: radial-gradient(
       rgba(0, 0, 0, 0.4) 30%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url(./assets/img/blog3.jpg);
+    url(../img/blog3.jpg);
 }
 .blog__container-bg-four {
   background-image: radial-gradient(
       rgba(0, 0, 0, 0.4) 30%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url(./assets/img/blog4.jpg);
+    url(../img/blog4.jpg);
 }
 .blog__button {
   border: 1px solid white;
