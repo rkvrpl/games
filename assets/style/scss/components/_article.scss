@@ -6,13 +6,20 @@
     rgba(12, 35, 46, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+  @media (max-width: 630px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .article__text {
-  font-size: 1.8vw;
+  font-size: 1.5rem;
   color: #ff7efa;
   text-shadow: 0 0 10px #d13acc;
   animation: blink 2s linear infinite;
   margin: 15px;
+  @media (max-width: 630px) {
+    margin: 10px;
+  }
 }
 @keyframes blink {
   50% {

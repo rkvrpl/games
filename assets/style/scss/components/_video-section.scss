@@ -4,6 +4,9 @@
   top: 0px;
   width: 100%;
   margin-top: -90px;
+  @media (max-width: 900px) {
+    margin-top: 0;
+  }
 }
 .wrapper-video:after {
   content: '';
@@ -29,6 +32,12 @@
   gap: 30px;
   margin-top: 15vw;
   z-index: 3;
+  @media (max-width: 670px) {
+    margin-top: 10vw;
+  }
+  @media (max-width: 500px) {
+    gap: 15px;
+  }
 }
 .wrapper-video__logo {
   width: 20vw;
@@ -41,6 +50,9 @@
   border-radius: 5px;
   width: 32%;
   padding: 20px 90px;
+  @media (max-width: 700px) {
+    padding: 2vw 0;
+  }
 }
 .wrapper-video__button:hover {
   background-color: #000000;
@@ -52,4 +64,7 @@
 }
 .wrapper-video__contact {
   width: 2.2vw;
+  @media (max-width: 500px) {
+    width: 2.7vw;
+  }
 }

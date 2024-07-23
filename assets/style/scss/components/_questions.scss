@@ -3,10 +3,17 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   margin-top: 35px;
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .questions__img {
   width: 40vw;
   margin: 100px 20px 0 0;
+  @media (max-width: 700px) {
+    display: none;
+  }
 }
 .questions__container {
   grid-area: 1/2/2/4;
@@ -26,7 +33,7 @@
   background-color: #393c42;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 20px;
+  padding: 20px 40px;
 }
 .questions-content:hover {
   background-color: #2e3137;
@@ -36,7 +43,7 @@
   position: absolute;
   top: 20px;
   right: 17px;
-  width: 1.5vw;
+  width: 1.3rem;
 }
 .pass {
   display: none;

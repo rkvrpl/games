@@ -31,6 +31,19 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = scrollPosition()
 })
+//burger
+document.querySelector(".burger").addEventListener("click", function () {
+	this.classList.toggle("active");
+	document.querySelector(".navigation").classList.toggle("open");
+  });
+  
+  const nawPoint = document.querySelectorAll(".navigation__item");
+  for (let i = 0; i < nawPoint.length; i++) {
+	nawPoint[i].addEventListener('click', function () {
+	  document.querySelector(".burger").classList.remove("active");
+	document.querySelector(".navigation").classList.remove("open");
+	})
+  }
 //валидация модального окна
 function submitModal() {
 	let nameValue = nameInput.value;
