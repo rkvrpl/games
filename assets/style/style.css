@@ -525,6 +525,12 @@ h2 {
   border-radius: 10px;
   padding: 12px;
 }
+@media (max-width: 900px) {
+  .navigation__item,
+  .navigation__button {
+    font-size: 1.8rem;
+  }
+}
 
 .navigation__item:hover,
 .navigation__button:hover {
@@ -1008,7 +1014,32 @@ h2 {
 .blog__container-bg-three:hover,
 .blog__container-bg-four:hover {
   transform: scale(1.03);
+  padding: 28px 40px;
   border: 2px solid white;
+}
+@media (max-width: 1200px) {
+  .blog__container-bg-one:hover,
+  .blog__container-bg-two:hover,
+  .blog__container-bg-three:hover,
+  .blog__container-bg-four:hover {
+    padding: 8px 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .blog__container-bg-one:hover,
+  .blog__container-bg-two:hover,
+  .blog__container-bg-three:hover,
+  .blog__container-bg-four:hover {
+    padding: 8px 30px;
+  }
+}
+@media (max-width: 610px) {
+  .blog__container-bg-one:hover,
+  .blog__container-bg-two:hover,
+  .blog__container-bg-three:hover,
+  .blog__container-bg-four:hover {
+    padding: 0 10px;
+  }
 }
 
 .blog__container-bg-one {

@@ -71,7 +71,17 @@
 .blog__container-bg-three:hover,
 .blog__container-bg-four:hover {
   transform: scale(1.03);
+  padding: 28px 40px;
   border: 2px solid white;
+  @media (max-width: 1200px) {
+    padding: 8px 40px;
+  }
+  @media (max-width: 1000px) {
+    padding: 8px 30px;
+  }
+  @media (max-width: 610px) {
+    padding: 0 10px;
+  }
 }
 .blog__container-bg-one {
   background-image: radial-gradient(
